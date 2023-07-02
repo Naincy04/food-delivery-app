@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:food_delivery_app/home/food_page_body.dart';
 import 'package:food_delivery_app/widgets/big-text.dart';
 import 'package:food_delivery_app/widgets/small-text.dart';
 
@@ -29,7 +30,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
                       BigText(text: "India"),
                       Row(
                         children: [
-                          smallText(text: "Kolkata"),
+                          smallText(text: "Patna"),
                           Icon(Icons.arrow_drop_down_rounded),
                         ],
                       ),
@@ -51,6 +52,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
               ),
             ),
           ),
+          FoodPageBody(),
         ],
       ),
     );
